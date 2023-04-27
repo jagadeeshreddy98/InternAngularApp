@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<table>
+    <thead>
+        <td>Employee Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Salary</td>
+        <td>State</td>
+        <td>City</td>
+        <td>Pincode</td>
+        <td>Mobile No</td>
+        <td>Date of Birth</td>
+        <td>Email</td>
+        <td>RoleId</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of emplst">
+            <td>{{emp.employeeId}}</td>
+            <td> {{emp.first_Name}}</td>
+            <td>{{emp.last_Name}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.state}}</td>
+            <td>{{emp.city}}</td>
+            <td>{{emp.pincode}}</td>
+            <td> {{emp.mobile_Number}}</td>
+            <td> {{emp.dateOfBirth}} </td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.roleId}}</td>
+        </tr>
+    </tbody>
+</table>
